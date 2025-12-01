@@ -9,6 +9,10 @@ newline_str:   .asciiz "\n"
 .globl main
 
 main:
+input_loop:
+    li $v0, 4
+    la $a0, prompt_msg
+    syscall
     # for now, just exit the program
     li $v0, 10
     syscall
