@@ -28,3 +28,7 @@ illegal:
     la $a0, error_msg
     syscall
     j input_loop
+start_fib:
+    li $v0, 4
+    la $a0, fib_label
+    syscall
