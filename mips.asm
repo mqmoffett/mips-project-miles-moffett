@@ -22,3 +22,6 @@ input_loop:
     # temporary: exit after reading
     li $v0, 10
     syscall
+move $t0, $v0       # store input N in $t0
+slti $t1, $t0, 22     # if N < 22, t1 = 1
+    bne  $t1, $zero, illegal
