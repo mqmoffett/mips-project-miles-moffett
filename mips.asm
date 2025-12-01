@@ -53,3 +53,5 @@ addi $t1, $t1, 1     # counter++
     li $v0, 4
     la $a0, space_str
     syscall
+fib_loop:
+    beq $t1, $t0, fib_done    # if counter == N, stop
