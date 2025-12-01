@@ -35,3 +35,7 @@ start_fib:
    li $t2, 0        # fib_prev = 0
     li $t3, 1        # fib_curr = 1
     li $t1, 1        # counter = 1 
+ # print first number: 0
+    li $v0, 1
+    move $a0, $t2
+    syscall
