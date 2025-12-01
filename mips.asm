@@ -71,3 +71,7 @@ fib_loop:
     # shift: fib_prev = fib_curr, fib_curr = next
     move $t2, $t3
     move $t3, $t4
+# counter++
+    addi $t1, $t1, 1
+
+    j fib_loop
