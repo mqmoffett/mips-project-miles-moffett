@@ -39,6 +39,7 @@ start_fib:
     li $v0, 1
     move $a0, $t2
     syscall
+addi $t1, $t1, 1     # counter++
 # print space
     li $v0, 4
     la $a0, space_str
