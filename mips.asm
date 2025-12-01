@@ -63,4 +63,11 @@ fib_loop:
     move $a0, $t4
     syscall
 
-    
+    # print space
+    li $v0, 4
+    la $a0, space_str
+    syscall
+
+    # shift: fib_prev = fib_curr, fib_curr = next
+    move $t2, $t3
+    move $t3, $t4
