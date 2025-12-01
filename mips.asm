@@ -23,3 +23,8 @@ input_loop:
     bne  $t1, $zero, illegal
 
     j start_fib
+illegal:
+    li $v0, 4
+    la $a0, error_msg
+    syscall
+    j input_loop
