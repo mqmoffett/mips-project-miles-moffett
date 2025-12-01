@@ -55,3 +55,12 @@ addi $t1, $t1, 1     # counter++
     syscall
 fib_loop:
     beq $t1, $t0, fib_done    # if counter == N, stop
+# next = fib_prev + fib_curr
+    add $t4, $t2, $t3
+
+    # print next
+    li $v0, 1
+    move $a0, $t4
+    syscall
+
+    
