@@ -16,3 +16,6 @@ input_loop:
     # for now, just exit the program
     li $v0, 10
     syscall
+li $v0, 5
+    syscall
+    move $t0, $v0       # store input N in $t0
