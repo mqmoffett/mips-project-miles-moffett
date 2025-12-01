@@ -43,3 +43,7 @@ start_fib:
     li $v0, 4
     la $a0, space_str
     syscall
+# print second number
+    li $v0, 1
+    move $a0, $t3
+    syscall
