@@ -32,3 +32,6 @@ start_fib:
     li $v0, 4
     la $a0, fib_label
     syscall
+   li $t2, 0        # fib_prev = 0
+    li $t3, 1        # fib_curr = 1
+    li $t1, 1        # counter = 1 
