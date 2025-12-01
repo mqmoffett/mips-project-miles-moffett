@@ -48,6 +48,7 @@ addi $t1, $t1, 1     # counter++
     li $v0, 1
     move $a0, $t3
     syscall
+ addi $t1, $t1, 1
 # print space
     li $v0, 4
     la $a0, space_str
