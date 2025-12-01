@@ -75,3 +75,12 @@ fib_loop:
     addi $t1, $t1, 1
 
     j fib_loop
+fib_done:
+    # print newline
+    li $v0, 4
+    la $a0, newline_str
+    syscall
+
+    # exit program
+    li $v0, 10
+    syscall
